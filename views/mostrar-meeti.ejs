@@ -126,4 +126,10 @@
 </main>
 
 <h2>Otros Meeti's Cercanos</h2>
-<p>Tengo que preguntar por el error </p>
+<div class="contenedor cercanos">
+    <% if(cercanos.length > 0 ) { %>
+            <%- include ('partials/card-meeti-cercanos.ejs'); %>
+    <% } else {  %>
+        <p>No hay Meeti's Cercanos</p>
+    <% } %>
+</div>
